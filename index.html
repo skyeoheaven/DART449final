@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel Layout with Scrolling, Fading, Sound & Extras</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="titleCard">
+    <img src="img/panel30.png" alt="Title Card">
+  </div>
+
+  <div id="volumeControls">
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0">
+  </div>
+
+  <div id="scrollPrompt">
+    <div class="arrow"></div>
+    <p>Scroll to tell the story</p>
+  </div>
+
+  <main data-scroll-container>
+    <section class="vertical-section" data-sound="rainoutside.mp3">
+      <img id="image1" src="img/panel1.png" alt="Panel 1" class="vertical-image" />
+    </section>
+
+    <section class="stacked-images-section" data-sound="chatterandraininside.mp3">
+      <div class="sticky-container">
+        <div class="image-grid">
+          <img id="image2" src="img/panel2.png" alt="Panel 2" />
+          <img id="image3" src="img/panel3.png" alt="Panel 3" />
+          <img id="image4" src="img/panel4.png" alt="Panel 4" />
+        </div>
+      </div>
+    </section>
+
+    <section class="vertical-section" data-sound="chatterandraininside.mp3">
+      <img id="image5" src="img/panel5.png" alt="Panel 5" class="vertical-image" />
+    </section>
+
+    <section class="fade-section" id="fade6" data-sound="nature.mp3">
+      <div class="fade-container">
+        <img id="fadeImage6" src="img/panel6a.png" alt="Panel 6" class="fade-image" />
+      </div>
+    </section>
+
+    <section class="fade-section" id="fade7" data-sound="nature.mp3">
+      <div class="fade-container">
+        <img id="fadeImage7" src="img/panel7.png" alt="Panel 7" class="fade-image" />
+      </div>
+    </section>
+
+    <section class="vertical-section" data-sound="chatterandraininside.mp3">
+      <img id="verticalTop" src="img/panel8.png" alt="Panel 8" class="vertical-image" />
+    </section>
+
+    <section class="horizontal-section" id="horizontal9-10" data-sound="nature.mp3">
+      <div class="sticky-wrapper">
+        <div class="horizontal-wrapper">
+          <div class="horizontal-panel">
+            <img id="horizontalImage9" src="img/panel9.png" alt="Panel 9" class="vertical-image2">
+          </div>
+          <div class="horizontal-panel">
+            <img id="horizontalImage10" src="img/panel10a.png" alt="Panel 10" class="vertical-image2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="group-section" id="group11-12" data-sound="chatterandraininside.mp3">
+      <div class="group-sticky">
+        <img id="groupImage11" src="img/panel11.png" alt="Panel 11" class="group-image" />
+        <img id="groupImage12" src="img/panel12.png" alt="Panel 12" class="group-image" />
+      </div>
+    </section>
+
+    <section class="fade-section" id="fade13" data-sound="nature.mp3">
+      <div class="fade-container">
+        <img id="fadeImage13" src="img/panel13a.png" alt="Panel 13" class="fade-image" />
+      </div>
+    </section>
+
+    <section class="vertical-section" data-sound="chatterandraininside.mp3">
+      <img id="verticalBottom" src="img/panel14.png" alt="Panel 14" class="vertical-image" />
+    </section>
+
+    <section class="fade-section" id="fade15" data-sound="nature.mp3">
+      <div class="fade-container">
+        <img id="fadeImage15" src="img/panel15.png" alt="Panel 15" class="fade-image" />
+      </div>
+    </section>
+
+    <section class="fade-section" id="fade16" data-sound="nature.mp3">
+      <div class="fade-container">
+        <img id="fadeImage16" src="img/panel16.png" alt="Panel 16" class="fade-image" />
+      </div>
+    </section>
+
+    <section class="vertical-section" data-sound="chatterandraininside.mp3">
+      <img id="panel17" src="img/panel17.png" alt="Panel 17" class="vertical-image" />
+    </section>
+
+    <section class="horizontal-section" id="horizontal18-19" data-sound="nature.mp3">
+      <div class="sticky-wrapper">
+        <div class="horizontal-wrapper">
+          <div class="horizontal-panel">
+            <img id="horizontalImage18" src="img/panel18.png" alt="Panel 18" class="vertical-image2">
+          </div>
+          <div class="horizontal-panel">
+            <img id="horizontalImage19" src="img/panel19.png" alt="Panel 19" class="vertical-image2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel20-section" data-sound="chatterandnature.mp3">
+      <div class="panel20-a-container">
+        <img id="panel20a" src="img/panel20a.png" alt="Panel 20A" class="panel20a" />
+      </div>
+      <div class="panel20-b-container">
+        <img id="panel20b" src="img/panel20b.png" alt="Panel 20B" class="panel20b" />
+      </div>
+    </section>
+
+    <section class="panel21-22-section" data-sound="chatterandnature.mp3">
+      <div class="panel21-container">
+        <img id="panel21" src="img/panel21.png" alt="Panel 21" class="panel21" />
+      </div>
+      <div class="panel22-container">
+        <img id="panel22" src="img/panel22.png" alt="Panel 22" class="panel22" />
+      </div>
+    </section>
+
+    <section class="fade-section" id="fade23" data-sound="natureandstorm.mp3">
+      <div class="fade-container">
+        <img id="fadeImage23" src="img/panel23.png" alt="Panel 23" class="fade-image panel23" />
+      </div>
+    </section>
+
+    <section class="vertical-section" data-sound="chatterandnature.mp3">
+      <img id="panel24" src="img/panel24.png" alt="Panel 24" class="vertical-image" />
+    </section>
+
+    <section class="horizontal-section" id="horizontal25-27" data-sound="chatterandnature.mp3">
+      <div class="sticky-wrapper">
+        <div class="horizontal-wrapper">
+          <div class="horizontal-panel three-panel">
+            <img id="horizontalImage25" src="img/panel25.png" alt="Panel 25" class="vertical-image2">
+          </div>
+          <div class="horizontal-panel three-panel">
+            <img id="horizontalImage26" src="img/panel26.png" alt="Panel 26" class="vertical-image2">
+          </div>
+          <div class="horizontal-panel three-panel">
+            <img id="horizontalImage27" src="img/panel27.png" alt="Panel 27" class="vertical-image2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="vertical-section" data-sound="chatterandnature.mp3">
+      <img id="panel28" src="img/panel28.png" alt="Panel 28" class="vertical-image" />
+    </section>
+    <section class="vertical-section" data-sound="chatterandnature.mp3">
+      <img id="panel29" src="img/panel29.png" alt="Panel 29" class="vertical-image" />
+    </section>
+
+    <div id="modalButtons">
+      <div id="artistStatementBubble">Artist Statement</div>
+      <div id="aboutArtistBubble">About the Artist</div>
+    </div>
+  </main>
+  
+  <div id="artistStatementModal">
+    <div class="modal-content">
+      <span id="modalClose">&times;</span>
+      <h2>Artist Statement</h2>
+      <p>
+        This is a project for Concordia’s DART449 course. Much of this course focuses on the different ways that JavaScript can be used for website design, and seeing so many interesting functions being used in scroll-based interactions struck a chord with me.
+      </p>
+      <p>
+        I have been a lifelong comic book fan, and I have a decent physical collection, but much of my comic reading has been done on a screen. I saw an opportunity with my final project for this class to attempt to elevate the traditional storytelling of comic books using scroll-based elements. I had always liked the idea of somehow combining comics with music for an elevated experience, and practicing event listeners was the perfect way to try this. Although I wish I had more time to refine the final product, I managed to fit in many of the creative ideas I was interested in trying, and I am proud of the outcome.
+      </p>
+      <p>
+        I plan on revisiting and expanding this project further. I believe that with more practice and refinement, I can produce a scroll-based storytelling experience that pushes the boundaries of traditional comic storytelling. The combination of dynamic visuals, smooth scrolling, and synchronized audio offers a unique way to tell a story that is both engaging and immersive.
+      </p>
+    </div>
+  </div>
+  
+  <div id="aboutArtistModal">
+    <div class="modal-content">
+      <span class="modalClose">&times;</span>
+      <h2>About the Artist</h2>
+      <p>
+        Skye O’Hearn-Smith is a Canadian artist currently studying design in Montreal, Canada. You can check out more of his work on Instagram @ssky3.
+      </p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
